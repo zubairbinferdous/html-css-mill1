@@ -1,0 +1,77 @@
+img{
+    width: 400px;
+}
+
+.mini-mini{
+    width: 150px;
+    border: 3px solid red;
+    overflow: hidden;
+}
+
+.mini-mini P {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.maga{
+    width: 400px;
+    height: 300px;
+    border: 3px solid red;
+    overflow: hidden;
+    overflow: scroll;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+}
+
+.container,
+.inner{
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(23, 203, 209);
+    
+}
+.container{
+    background-color: violet;
+}
+
+.inner{
+    background-color: tomato;
+    transform: scale(.7) rotate(30deg) translate(50px , 50px);
+}
+.boxTwo{
+    width: 150px;
+    height: 250px;
+    background-color: aqua;
+    /* transition: 3s; */
+    transition: width 3s , height 1s , transform 1s;
+}
+
+.boxTwo:hover{
+    width: 250px;
+    height: 400px;
+    transform: rotate(140deg);
+}
+
+
+.field{
+    border: 3px solid red;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.bat{
+    transition: .3s;
+}
+
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: top right;
+    
+    
+}
+
