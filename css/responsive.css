@@ -62,16 +62,77 @@ img{
     height: 40px;
     border-radius: 50%;
     background-color: red;
+    position: relative;
+    left: 515px;
+    transition: transform .4s ease-out .3s ;
 }
 
 .bat{
     transition: .3s;
 }
 
+.field:hover .ball{
+    transform: translate(800px , -300px);
+    
+}
+
 .field:hover .bat{
     transform: rotate(-60deg);
     transform-origin: top right;
-    
-    
 }
+
+@keyframes rise {
+    0%{
+        background-color:yellow;
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+    }
+
+    25%{
+        background-color: tomato;
+        top: 400px;
+        transform: scale(.7);
+    }
+
+    50%{
+        background-color:yellow;
+        top: 0px;
+        transform: scale(1);
+    }
+
+
+    75%{
+        background-color: tomato;
+        top: 400px;
+        transform: scale(.7);
+    }
+
+
+    100%{
+        background-color: yellow;
+        left: 90%;
+        top: 0px;
+        transform: scale(1);
+    }
+}
+
+.sky{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+}
+
+.sun{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: yellow;
+    animation: rise 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+}
+
+
+
 
