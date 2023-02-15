@@ -1,3 +1,7 @@
+:root {
+    --primary-color: green;
+}
+
 img{
     width: 400px;
 }
@@ -133,6 +137,34 @@ img{
     position: relative;
 }
 
+.box{
+    width:200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 5px solid rgb(236, 7, 149);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#box2{
+    display: none;
+}
 
+#box3{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.color{
+    color: var(--primary-color);
+    
+}
+
+.calc{
+    width: calc(100% - 200px);
+    background-color: teal;
+    height: 100px;
+}
 
