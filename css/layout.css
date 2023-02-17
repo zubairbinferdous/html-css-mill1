@@ -68,3 +68,31 @@
     grid-template-columns: repeat(3, 1fr);
 
 }
+.calender{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-template-rows:100px repeat(5 , 60px);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.date{
+    font-size: 40px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+}
+
+.other{
+    background-color: tomato;
+}
+
+.day{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 236, 217);
+}
