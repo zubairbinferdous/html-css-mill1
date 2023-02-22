@@ -1,0 +1,29 @@
+.container{
+    display:flex ;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+.box{
+    width: 700px;
+    height: 200px;
+    background-color: violet;
+}
+
+@media screen and (max-width:576px) {
+    
+    .container{
+      flex-direction: column;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .container{
+        display:flex ;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .box{
+        background-color: rgb(224, 133, 13);
+    }
+    
+
+}
